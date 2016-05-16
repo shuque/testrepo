@@ -206,7 +206,6 @@ cheetara.huque.com.     86400   IN      RRSIG   A 8 3 86400 20160604014047 20160
 
 ```
 $ godig +dnssec _443._tcp.www.ietf.org TLSA
-#####################################################################
 ;; ->>HEADER<<- ;; opcode: QUERY, status: NOERROR, id: 22021
 ;; flags: qr rd ra ad; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
 
@@ -225,7 +224,6 @@ _443._tcp.www.ietf.org. 1765    IN      RRSIG   TLSA 5 5 1800 20170308083405 201
 
 ```
 $ godig +dnssec www78.upenn.edu A
-#####################################################################
 ;; ->>HEADER<<- ;; opcode: QUERY, status: NXDOMAIN, id: 44448
 ;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 6, ADDITIONAL: 1
 
@@ -286,7 +284,6 @@ cheetara.huque.com.	21599	IN	A	50.116.63.23
 
 ```
 $ godig -4 @l.root-servers.net. +nsid . SOA
-#####################################################################
 ;; ->>HEADER<<- ;; opcode: QUERY, status: NOERROR, id: 43374
 ;; flags: qr aa rd; QUERY: 1, ANSWER: 1, AUTHORITY: 13, ADDITIONAL: 25
 
@@ -346,7 +343,6 @@ m.root-servers.net.     518400  IN      AAAA    2001:dc3::35
 
 ```
 $ godig +0x20 www.upenn.edu A
-#####################################################################
 ;; ->>HEADER<<- ;; opcode: QUERY, status: NOERROR, id: 25139
 ;; flags: qr rd ra; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 0
 
@@ -364,7 +360,6 @@ a1165.dscg.akamai.net.  20      IN      A       23.220.148.48
 
 ```
 $ godig txtrecord.huque.com. TXT
-#####################################################################
 UDP response was truncated. Retried over TCP.
 ;; ->>HEADER<<- ;; opcode: QUERY, status: NOERROR, id: 1742
 ;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
@@ -394,7 +389,6 @@ $ godig +edns=1 www.yahoo.com. A
 
 ```
 $ godig +opcode=1 www.verisign.com. A
-#####################################################################
 ;; ->>HEADER<<- ;; opcode: IQUERY, status: NOTIMPL, id: 57229
 ;; flags: qr rd ra; QUERY: 0, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 0
 
